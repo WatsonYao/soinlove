@@ -1,5 +1,5 @@
-from flask import render_template,Flask
 import os 
+from flask import render_template,Flask
 from flask import send_from_directory
 
 app = Flask(__name__)
@@ -16,21 +16,9 @@ def react():
 def appjs():
     return send_from_directory(os.path.join(app.root_path, 'static'),'app.js')
     
-@app.route('/node_modules/material-ui/lib/app-bar.js')
-def appbar():
-    return send_from_directory(os.path.join(app.root_path, '/node_modules/material-ui/lib/'),'app-bar.js')
-
-@app.route('/Main.js')
-def Mainjs():
-    return send_from_directory(os.path.join(app.root_path, 'static'),'Main.js')
-    
 @app.route('/build/react-dom.js')
 def reactdom():
     return send_from_directory(os.path.join(app.root_path, 'build'),'react-dom.js')
-    
-@app.route('/build/browser.min.js')
-def browser():
-    return send_from_directory(os.path.join(app.root_path, 'build'),'browser.min.js')
     
     
 @app.route('/favicon.ico')
@@ -38,4 +26,4 @@ def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',port=80，debug=True)
+    app.run(host='0.0.0.0',port=80,debug=True)
