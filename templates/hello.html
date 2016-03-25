@@ -10,44 +10,22 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
     
     <title>so in love with mathilda</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.5/marked.min.js"></script>
   </head>
 
   <body>
     <h1>So in love with mathilda</h1>
     
-    <div id="container">
-      <p>
-        To install React, follow the instructions on
-        <a href="https://github.com/facebook/react/">GitHub</a>.
-      </p>
-      <p>
-        If you can see this, React is not working right.
-        If you checked out the source from GitHub make sure to run <code>grunt</code>.
-      </p>
-    </div>
-    <h4>Example Details</h4>
-    <p>This is written in vanilla JavaScript (without JSX) and transformed in the browser.</p>
-    <p>
-      Learn more about React at
-      <a href="https://facebook.github.io/react" target="_blank">facebook.github.io/react</a>.
-    </p>
-    <script src="../../build/react.js"></script>
-    <script src="../../build/react-dom.js"></script>
-    <script type="text/jsx">
-      var names = ['Watson', 'Mathilda'];
-
-      React.render(
-        <div>
-        {
-          names.map(function (name) {
-            return <div>Hello, {name}!</div>
-          })
-        }
-        </div>,
-        document.getElementById('container')
-      );
+    <div id="content"></div>
+    <script type="text/babel" src="app.js"></script>
+    <script type="text/babel">
+      // To get started with this tutorial running your own code, simply remove
+      // the script tag loading scripts/example.js and start writing code here.
     </script>
-    
     
   </body>
 
