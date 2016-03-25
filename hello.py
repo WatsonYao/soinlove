@@ -7,6 +7,11 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     return render_template('hello.html')
+
+@app.route('/build/react.js')
+def react():
+    return send_from_directory(os.path.join(app.root_path, 'build'),'react.js')
+    
     
 @app.route('/favicon.ico')
 def favicon():
