@@ -5,11 +5,12 @@ var CommentBox = React.createClass({
     return (
       <div className="commentBox">
         Hello, Mathilda! I am a Watson.
-      </div>
-      <AppBar
+        <AppBar
         title="Title"
         iconClassNameRight="muidocs-icon-navigation-expand-more"
-      />
+        />
+      </div>
+      
     );
   }
 });
