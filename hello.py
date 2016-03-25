@@ -17,7 +17,7 @@ def appjs():
     return send_from_directory(os.path.join(app.root_path, 'static'),'app.js')
     
 @app.route('/node_modules/material-ui/lib/app-bar.js')
-def app-bar():
+def appbar():
     return send_from_directory(os.path.join(app.root_path, '/node_modules/material-ui/lib/'),'app.js')
 
 @app.route('/Main.js')
