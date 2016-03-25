@@ -12,6 +12,14 @@ def hello():
 def react():
     return send_from_directory(os.path.join(app.root_path, 'build'),'react.js')
     
+@app.route('/build/react-dom.js')
+def react():
+    return send_from_directory(os.path.join(app.root_path, 'build'),'react-dom.js')
+    
+@app.route('/build/browser.min.js')
+def react():
+    return send_from_directory(os.path.join(app.root_path, 'build'),'browser.min.js')
+    
     
 @app.route('/favicon.ico')
 def favicon():
