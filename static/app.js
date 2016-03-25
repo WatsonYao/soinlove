@@ -1,4 +1,4 @@
-import AppBar from '../node_modules/material-ui/lib/app-bar.js';
+import AppBar from '/node_modules/material-ui/lib/app-bar';
 
 var CommentBox = React.createClass({
   render: function() {
