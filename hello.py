@@ -12,6 +12,14 @@ def hello():
 def react():
     return send_from_directory(os.path.join(app.root_path, 'build'),'react.js')
     
+@app.route('/app.js')
+def appjs():
+    return send_from_directory(os.path.join(app.root_path, 'static'),'app.js')
+
+@app.route('/Main.js')
+def Mainjs():
+    return send_from_directory(os.path.join(app.root_path, 'static'),'Main.js')
+    
 @app.route('/build/react-dom.js')
 def reactdom():
     return send_from_directory(os.path.join(app.root_path, 'build'),'react-dom.js')
