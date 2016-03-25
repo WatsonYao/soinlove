@@ -20,7 +20,6 @@ def appjs():
 def reactdom():
     return send_from_directory(os.path.join(app.root_path, 'build'),'react-dom.js')
     
-    
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico', mimetype='image/vnd.microsoft.icon')
