@@ -29,7 +29,7 @@ class Main extends React.Component {
     super(props, context);
     this.handleRequestClose = this.handleRequestClose.bind(this);
     this.handleTouchTap = this.handleTouchTap.bind(this);
-
+    console.log("constructor");
     this.state = {
       open: false,
     };
